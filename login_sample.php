@@ -1,4 +1,9 @@
 <?php
+	
+	// ühenduse loomiseks kasuta
+	require_once("../config.php");
+	$database = "if15_kaartur_";
+	$mysqli = new mysqli($servername, $username, $password, $database);
 
   // muuutujad errorite jaoks
 	$email_error = "";
